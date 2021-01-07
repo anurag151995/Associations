@@ -1,0 +1,7 @@
+<h2>showing post....</h2>
+<P>Post name: <%= @post1.name%></br></P>
+<p>Number of likes: <%= @post1.likes.count%></p>
+</br>
+<%= link_to 'Like Post', like_create_path(:post_id => @post1.id)%></br>
+<%= link_to 'Back', post1s_path%>
+</br>

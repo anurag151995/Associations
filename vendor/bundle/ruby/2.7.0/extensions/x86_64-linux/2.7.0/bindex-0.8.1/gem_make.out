@@ -1,0 +1,15 @@
+current directory: /home/yuvasoft/associations_view/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/home/yuvasoft/.rvm/rubies/ruby-2.7.1/bin/ruby -I /home/yuvasoft/.rvm/rubies/ruby-2.7.1/lib/ruby/2.7.0 -r ./siteconf20201106-8538-1ln12k4.rb extconf.rb
+creating Makefile
+
+current directory: /home/yuvasoft/associations_view/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/yuvasoft/associations_view/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/yuvasoft/associations_view/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20201106-8538-xlq2fa/skiptrace/internal

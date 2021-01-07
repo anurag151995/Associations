@@ -1,0 +1,8 @@
+<h2>comment created sucessfully....</h2>
+<p>comment name: <%= @comment1.name%></p>
+<p>Number of likes: <%= @comment1.likes.count%></p>
+<%= link_to 'Like Comment', like_create_path(:comment_id => @comment1.id)%></br>
+<%= link_to 'Back', comment1s_path%>
+</br>
+
+

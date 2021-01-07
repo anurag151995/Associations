@@ -1,0 +1,7 @@
+<p>Enter physicians Details</p>
+<%=form_for @physician do |f| %>
+   <%= f.label :Physicians_Name%>
+   <%= f.text_field :name%>
+   <%= f.hidden_field :patient_id, :value => params[:format] %>
+   <%= f.submit %>
+<% end %>

@@ -1,0 +1,23 @@
+<%= form_for @author do |f| %>
+  <%#= render 'shared/errors', object: @author %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <p><strong>Books:</strong></p>
+
+    <%= f.fields_for :books do |b| %>
+      <div>
+        <%= b.label :name %>
+        <%= b.text_field :name %>
+
+        <%= b.label :title %>
+        <%= b.text_field :title %>
+      </div>
+    <% end %>
+  </div>
+
+  <%= f.submit %>
+<% end %>

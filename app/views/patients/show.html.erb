@@ -1,0 +1,6 @@
+<p>Patients Details</p>
+<p>
+  <strong> Patients Name:</strong>
+  <%= @patient.name%>
+</p>
+<%= link_to 'Create Physician', new_physician_path(@patient.id)%>

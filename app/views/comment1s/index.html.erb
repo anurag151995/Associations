@@ -1,0 +1,15 @@
+
+<h1>Listing comments....</h1>
+<table>
+  <tr>
+    <th>Comment Name:</th>
+    <th colspan="3"></th>
+  </tr>
+ 
+  <% @comment1s.each do |comment1| %>
+    <tr>
+      <td><%= comment1.name %></td>
+      <td><%= link_to 'show', comment1_path(comment1.id) %></td>
+    </tr>
+  <% end %>
+</table>

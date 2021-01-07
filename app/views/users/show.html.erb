@@ -1,0 +1,9 @@
+<h2>showing user....</h2>
+<%= @user.name%></br>
+<%= @user.email%></br>
+<%= @user.password%></br>
+<%= link_to 'edit', controller: 'users' %>
+</br>
+<%#= link_to 'Add subscription', subscription_new_path(:id => @user.id)%>
+</br>
+<%= link_to 'subscription', new_subscription_path(@user.id)%>

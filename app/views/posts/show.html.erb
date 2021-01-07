@@ -1,0 +1,6 @@
+<h2>showing post....</h2>
+<%= @post.name%></br>
+<%= @post.description%></br>
+</br>
+<%= link_to 'Like Post', new_comment_path(:id => @post.id)%>
+</br>

@@ -1,0 +1,28 @@
+<h2>with form_for </h2>
+<%= form_for @subscription do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</br>
+</br>
+  <%= f.label :plan_id %>
+  <%= f.text_field :plan_id %>
+</br>
+</br>
+  <%=f.hidden_field :id, :value => params["format"] %>
+</br>
+  <%=f.submit "Create" %>
+<% end %>
+
+
+<h2>with form_tag</h2>
+<%= form_tag subscriptions_path do %>
+   <label>Name:</label>
+   <%= text_field_tag :'user[name]' %>
+</br>
+</br>
+
+   <label>Plan_id:</label>
+   <%= text_field_tag :'user[plan_id]' %>
+</br>  
+   <%= submit_tag "Create User" %>
+<%end%>
